@@ -19,6 +19,10 @@ class Result extends StatelessWidget {
     return resultText;
   }
 
+  int get totalscorepoint {
+    return resultscore;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -29,6 +33,16 @@ class Result extends StatelessWidget {
             resultphrase,
             style: TextStyle(
               fontSize: 34,
+              fontWeight: FontWeight.bold,
+            ),
+            textAlign: TextAlign.center,
+          ),
+        ),
+        Center(
+          child: Text(
+            '$totalscorepoint',
+            style: TextStyle(
+              fontSize: 20,
               fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.center,
