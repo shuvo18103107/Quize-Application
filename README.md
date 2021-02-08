@@ -1,16 +1,9 @@
 # quize_application
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In this application i learned basically how to follow clean code architecture in flutter . The app give some question to the user and each question has some point and after choosing the answer of the particular question ,user get points and after finising the quize ,user get the totalScore and status , also user can reset the quize to play again. Here I larned all about 
+- stateless and statefull widget 
+- how to splliting the app into widget for writing more clear code.
+- Map, list , const ,final ,get 
+- conditional logic ,null,callback function, using private properties 
+- pointing the function address and pass it through widget ,constructor and lots of dart core fundamental topic.
