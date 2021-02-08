@@ -1,6 +1,6 @@
 # quize_application
 
-In this application i learned basically how to follow clean code architecture in flutter . Here i larned all about 
+In this application i learned basically how to follow clean code architecture in flutter . Here I larned all about 
 - stateless and statefull widget 
 - how to splliting the app into widget for writing more clear code.
 - Map, list , const ,final ,get 
