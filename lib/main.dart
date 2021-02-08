@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
         {'text': 'Rabbit', 'score': 10},
         {'text': 'Tiger', 'score': 6},
         {'text': 'Lion', 'score': 5},
-        {'text': 'Snake', 'score': 3},
+        {'text': 'Snake', 'score': 1},
       ]
     },
     {
@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
         {'text': 'Shutter-Island', 'score': 10},
         {'text': 'Inception', 'score': 6},
         {'text': 'Dark Knight', 'score': 5},
-        {'text': 'Joker', 'score': 3},
+        {'text': 'Joker', 'score': 1},
       ]
     },
     {
@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
         {'text': 'Rose', 'score': 10},
         {'text': 'Sunflower', 'score': 6},
         {'text': 'Water-Lily', 'score': 5},
-        {'text': 'Tubelip', 'score': 3},
+        {'text': 'Tubelip', 'score': 1},
       ]
     },
   ];
@@ -57,16 +57,17 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          appBar: AppBar(
-            title: Text("Quize Application"),
-          ),
-          body: _queCounter < _questionList.length
-              ? Quize(
-                  questionList: _questionList,
-                  answerQuestion: _answerQuestion,
-                  queCounter: _queCounter,
-                )
-              : Result()),
+        appBar: AppBar(
+          title: Text("Quize Application"),
+        ),
+        body: _queCounter < _questionList.length
+            ? Quize(
+                questionList: _questionList,
+                answerQuestion: _answerQuestion,
+                queCounter: _queCounter,
+              )
+            : Result(_totalScore),
+      ),
     );
   }
 }
